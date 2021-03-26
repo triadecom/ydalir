@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ydalir</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/gerbera/gerbera.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+    <style> h2:first-letter {color: var(--blue);</style>
+</head>
+<body>
+    <header class="fbsb fbr">
+        <div class="headleft fbr">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <a href="#Ydalir" class="headmenu">О нас</a>
+            <a href="#Ydalir" class="headmenu">Наши проекты</a>
+            <a href="#Ydalir" class="headmenu">Контакты</a>
+        </div>
+        <div class="lang">
+            <span>RU</span>
+            /
+            <a href="#">EN</a>
+        </div>
+    </header>
+    
+    <div class="homepage fbsb">
+        
+        <img src="img/clay-mockup.png" class="mockup" alt="mockup">
+        
+        <div class="text fbfe">
+            <h2>YDALIR Systems Makes something that you need</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+        </div>
+        
+    </div>
+    
+    <div class="secondblock">
+        <h2 class="ml2">What we do?</h2>
+        <div class="block2 fbr fbsb">
+        <div class="buttons btn__nav fbc">
+            <div class="firstrow fbr">
+                <button class="btn__button tile one">
+                    <p class="tilename">1. Software<br>Developing</p>
+                </button>
+                <button class="btn__button tile two">
+                    <p>2. UI/UX<br>Design</p>
+                </button>
+                <button class="btn__button tile three">
+                    <p>3. Full cycle<br>Developing</p>
+                </button>
+                
+            </div>
+            <div class="secondrow fbr">
+                <button class="btn__button tile four">
+                    <p>4. Businnes &<br>Sys Analytics</p>
+                </button>
+                <button class="btn__button tile five">
+                    <p>5. DevOps</p>
+                </button>
+                <button class="btn__button tile six">
+                    <p>6. IT<br>Consulting</p>
+                </button>
+            </div>
+        </div>
+        
+        <div class="btn__content">
+           
+            <div class="infoside btn__text">
+                <h2>1. Software Developing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+            </div>            
+            <div class="infoside btn__text hidden">
+                <h2>2. UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+            </div>
+            <div class="infoside btn__text hidden">
+                <h2>3. Full cycle developing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+            </div>
+            <div class="infoside btn__text hidden">
+                <h2>4. Businnes & System analytics</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+            </div>
+            <div class="infoside btn__text hidden">
+                <h2>5. DevOps</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+            </div>
+            <div class="infoside btn__text hidden">
+                <h2>6. IT Consulting</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui. </p>
+            </div>
+        </div>
+
+        
+        </div>
+    </div>
+    
+    
+    <script>
+        console.clear();
+
+        (function() {    
+          'user strict'
+          const menu = document.querySelector('.btn__nav');
+          const buttons = document.querySelectorAll('.btn__button');
+          const contents = document.querySelectorAll('.btn__text');
+          if(!menu) return;
+
+
+          const switchTab = function (menu, tab) {
+            let currIndex = '';
+
+            buttons.forEach( function(button, index) {
+              button.classList.remove('btn__button_active');
+              if (button === tab) {
+                button.classList.add('btn__button_active');
+                currIndex = index;
+              }
+            });
+            return currIndex;
+          }
+
+          function switchContent(menu, currIndex) {
+            contents.forEach( function(content, index) {
+              console.log(index);
+              console.log(currIndex);
+                content.classList.add('hidden');
+              if (index === currIndex) {
+                content.classList.remove('hidden');
+              }
+            })
+          }
+
+          menu.addEventListener('click', function(e) {
+            if (e.target.tagName != 'BUTTON') return;
+            let currIndex = switchTab(menu, e.target);
+            switchContent(menu, currIndex);
+          });
+
+          console.log(content.length);
+        })();  
+           
+    </script>
+
+    
+    
+    
+    <div class="thirdblock fbc">
+        <h1>Our projects</h1>
+        <div class="projectslogo fbr">
+           <div class="menu__nav">
+            <button class="menu__button one"></button>
+            <button class="menu__button two"></button>
+           </div>    
+        </div>
+        <div class="divider"></div>
+        <div class="menu__content">
+        
+        <div class="menu__text">
+            <div class="projectblock fbr fbsb">
+                <div class="textside fbc">
+                    <h1>Aloha</h1>
+                    <div class="social fbr">
+                        <img src="img/gplay-icn.svg" alt="">
+                        <img src="img/appstore-icn.svg" alt="">
+                        <img src="img/site-icn.svg" alt="">
+                        <img src="img/insta-icn.svg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui.</p>
+                </div>
+
+                <div class="gallery">
+                    <div class="galleria">
+                        <img src="img/clay-mockup.png" alt="">
+                        <img src="img/appstore-icn.svg" alt="">
+                        <img src="img/b4-1.svg" alt="">
+                    </div>
+                    <script>
+
+                    </script>
+                </div>
+
+            </div>
+        </div>
+        
+            <div class="menu__text hidden">
+            <div class="projectblock fbr fbsb">
+                <div class="textside fbc">
+                    <h1>Aloha2</h1>
+                    <div class="social fbr">
+                        <img src="img/gplay-icn.svg" alt="">
+                        <img src="img/appstore-icn.svg" alt="">
+                        <img src="img/site-icn.svg" alt="">
+                        <img src="img/insta-icn.svg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam. Nulla id dapibus neque. Etiam quis convallis nunc. Maecenas dolor ipsum, dignissim eu nisl non, efficitur rutrum dui.</p>
+                </div>
+
+                <div class="gallery">
+                    <div class="galleria">
+                        <img src="img/insta-icn.svg" alt="">
+                        <img src="img/appstore-icn.svg" alt="">
+                        <img src="img/b4-1.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <script>
+                                    (function() {
+                            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+                            Galleria.run('.galleria');
+                        }()); 
+        </script>
+        
+        </div>
+    </div>
+    
+    <div class="fourthblock fbc">
+        <h2>What purposes of our team?</h2>
+        <div class="purposes fbr fbsb">
+            <div class="purpose purposeone fbc">
+                <img src="img/002-shuttle.svg" alt="">
+                <h3>Purpose one</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam.</p>
+            </div>
+            <div class="purpose purposetwo fbc">
+                <img src="img/001-diagram.svg" alt="">
+                <h3>Purpose two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam.</p>
+            </div>
+            <div class="purpose purposethree fbc">
+                <img src="img/003-open-book.svg" alt="">
+                <h3>Purpose three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus aliquam urna quis semper. Nunc ut leo eu leo placerat rutrum quis eget diam. Pellentesque in enim libero. Duis at vestibulum quam.</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="motto fbc">
+            <p>Раскройте потенциал своего корпоративного решения. <br>Начните преобразование вместе с нами.</p>            
+            <h2>Свяжитесь с нами.</h2>
+        </div>
+        <div class="contacts fbс">
+            <div class="info fbc">
+                <a href="#">+7 (777) 123-45-67</a>
+                <a href="#">+7 (732) 987-65-43</a>
+                <a href="#">info@ydalir.org</a>
+                <a href="#">test</a>
+            </div>
+            <div class="map mb1">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7c6d342bd2fd0f3adf04b58208bbe8b1dcb9ef4317aa37dbbc5b8bf5e02375f&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        2021, Ydalir (c)
+    </footer>
+    
+        <script>
+        console.clear();
+
+        (function() {    
+          'user strict'
+          const menu = document.querySelector('.menu__nav');
+          const buttons = document.querySelectorAll('.menu__button');
+          const contents = document.querySelectorAll('.menu__text');
+          if(!menu) return;
+
+
+          const switchTab = function (menu, tab) {
+            let currIndex = '';
+
+            buttons.forEach( function(button, index) {
+              button.classList.remove('menu__button_active');
+              if (button === tab) {
+                button.classList.add('menu__button_active');
+                currIndex = index;
+              }
+            });
+            return currIndex;
+          }
+
+          function switchContent(menu, currIndex) {
+            contents.forEach( function(content, index) {
+              console.log(index);
+              console.log(currIndex);
+                content.classList.add('hidden');
+              if (index === currIndex) {
+                content.classList.remove('hidden');
+              }
+            })
+          }
+
+          menu.addEventListener('click', function(e) {
+            if (e.target.tagName != 'BUTTON') return;
+            let currIndex = switchTab(menu, e.target);
+            switchContent(menu, currIndex);
+          });
+
+          console.log(content.length);
+        })();
+            
+                                            (function() {
+                            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+                            Galleria.run('.galleria');
+                        }());     
+           
+    </script>
+    
+</body>
+</html>
